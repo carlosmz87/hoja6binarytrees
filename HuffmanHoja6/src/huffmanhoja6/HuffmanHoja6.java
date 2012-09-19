@@ -6,7 +6,7 @@ package huffmanhoja6;
 
 /**
  *
- * @author Sara
+ * @author Douglas Dávila
  */
 public class HuffmanHoja6 {
 
