@@ -80,14 +80,17 @@ public class HuffmanTree implements Comparable {
      * @param representation
      */
     protected void print(BinaryTree r, String representation)
-    {
+    {           
         if (!r.left().isEmpty())
         {   // nodo interior
             print(r.left(),representation+"0"); // Agregar 0
             print(r.right(),representation+"1"); // Agregar 1
         } else { // Leaf; imprimir codificación
-            Leaf e = (Leaf)r.value();
-            System.out.println("Encoding of "+e.ch+" is "+representation+" (frequency was "+e.frequency+")");            
+            Leaf e = (Leaf)r.value();            
+            System.out.println("   "+e.ch +"     -        "
+                               +e.frequency+"        -      "
+                               +representation);            
+            System.out.println("-----------------------------------------------");
         }   
     }
     

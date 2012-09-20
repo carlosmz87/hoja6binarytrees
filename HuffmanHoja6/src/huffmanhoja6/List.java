@@ -1,11 +1,12 @@
 package huffmanhoja6;
 
+import java.util.Iterator;
 /**
  * Interfaz generica de estructura de datos Listas
  * @param <E> clase generica
  * @author Douglas Davila
  * @since 12/08/2012
- * @version 1.0
+ * @version 1.1
  */
 public interface List<E> {
 
@@ -53,4 +54,32 @@ public interface List<E> {
      * @since 12/08/2012
      */
     public E removeFirst();
+    
+    /**
+     * Remueve el último objeto en la lista
+     * @pre que la lista no este vacía
+     * @post el último elemento se remueve
+     * @return
+     * @since 19/09/2012
+     */
+    public E removeLast();
+    
+    /**
+     * Elimina un objeto con valor vulue
+     * @pre que value no se nulo
+     * @post objeto elimiado con valor value , si existe
+     * @param value
+     * @return
+     * @since 19/09/2012
+     */
+    public E remove(E value);
+   
+    /**
+     * iterador de List
+     * @pre n/a
+     * @post devuelve un iterador para desplasarce en una lista
+     * @return
+     * @since 19/09/2012
+     */
+    public Iterator<E> iterator();
 }
