@@ -102,6 +102,7 @@ public class SinglyLinkedList<E> extends AbstractList<E>{
      * @since 19/09/2012
      * @see List
      */
+    @Override
     public E removeLast()
     {
         Node<E> finger = head;
@@ -135,6 +136,7 @@ public class SinglyLinkedList<E> extends AbstractList<E>{
      * @since 19/09/2012
      * @see List
      */
+    @Override
     public E remove(E value)
     {
         Node<E> finger = head;
@@ -168,6 +170,7 @@ public class SinglyLinkedList<E> extends AbstractList<E>{
      * @since 19/09/2012
      * @see List
      */
+    @Override
     public Iterator<E> iterator(){
         Iterator<E> iterator = new SinglyLinkedListIterator<>(head);
         return iterator;            
